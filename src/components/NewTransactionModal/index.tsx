@@ -5,7 +5,6 @@ import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import { api } from '../../services/api';
-
 import { Container, TransactionTypeContainer, RadioBox } from './styles';
 
 interface NewTransactionModalProps {
@@ -51,14 +50,14 @@ export function NewTransactionModal({
         <input
           placeholder="Title"
           value={title}
-          onChange={(event) => setTitle(event.target.value)}
+          onChange={event => setTitle(event.target.value)}
         />
 
         <input
           type="number"
           placeholder="Value"
           value={value}
-          onChange={(event) => setValue(Number(event.target.value))}
+          onChange={event => setValue(Number(event.target.value))}
         />
 
         <TransactionTypeContainer>
@@ -86,7 +85,7 @@ export function NewTransactionModal({
         <input
           placeholder="Category"
           value={category}
-          onChange={(event) => setCategory(event.target.value)}
+          onChange={event => setCategory(event.target.value)}
         />
 
         <button type="submit">Register</button>
