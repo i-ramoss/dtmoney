@@ -7,7 +7,11 @@ import { TransactionsContext } from '../../TransactionsContexts';
 import { Container } from './styles';
 
 export function Summary() {
-  const data = useContext(TransactionsContext);
+  const transactions = useContext(TransactionsContext);
+  console.log(
+    '🚀 ~ file: index.tsx ~ line 11 ~ Summary ~ transactions',
+    transactions,
+  );
 
   return (
     <Container>
